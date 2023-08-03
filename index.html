@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!--
+
+            -Add a favorite color option to your form that uses the input of type color
+            -Add a birthday option to your form that uses the input of type date
+            -Update your Email in a way that your form will not submit unless it is a valid email address (i.e. has an “@” symbol)
+
+            -How can you augment your code so that when you successfully submit the form to Surge.sh you see something nicer than the default response? I.e. maybe a “success” page 🤔
+            -Make a GET request to retrieve data from your Google Sheets API?
+
+        -->
+
+    </head>
+
+    <body>
+        <form action="https://sheetdb.io/api/v1/onqfs53jnzjj9" onsubmit="return validateForm(event)" method="POST">
+
+            <label>First Name</label>
+            <input type="text" name="firstName"> <br><br>
+    
+            <label>Last Name</label>
+            <input type="text" name="lastName"> <br><br>
+    
+            <label>Email</label>
+            <input type="text" name="email" id="email"> <br><br>
+    
+            <label>Favorite Snack:</label> <br><br>
+
+            <!-- <select name="favoriteSnack">
+                <option value="takis">Takis</option>
+                <option value="banana">Banana</option>
+                <option value="twizzlers">Twizzlers</option>
+                <option value="beef jerky">Beef Jerky</option>
+            </select> -->
+
+            <input type="radio" name="favoriteSnack" value="Takis">
+            <label>Takis</label> <br>
+            <input type="radio" name="favoriteSnack" value="Gummies">
+            <label>Gummies</label> <br>
+            <input type="radio" name="favoriteSnack" value="Pirates Booty">
+            <label>Pirates Booty</label>
+    
+            <br /><br /> <input type="submit">
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
